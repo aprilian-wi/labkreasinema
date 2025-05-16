@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <a href="index.html" class="block py-3 text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Home</a>
                 <a href="work.html" class="block py-3 text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Work</a>
                 <a href="about.html" class="block py-3 text-white text-sm uppercase tracking-wider hover-gold transition duration-300">About</a>
-                <a href="#" class="block py-3 text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Services</a>
+                <a href="services.html" class="block py-3 text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Services</a>
                 <a href="contact.html" class="block py-3 text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Contact</a>
             </div>
         `;
