@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Work | Lab Pictures</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-follower"></div>
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 py-6 px-8 flex justify-between items-center bg-black bg-opacity-80 backdrop-blur-md">
+        <div class="logo text-2xl font-bold animate__animated animate__fadeInDown">
+            <span class="text-white">LAB</span>
+            <span class="gold-text">PICTURES</span>
+        </div>
+        
+        <div class="hidden md:flex space-x-8">
+            <a href="index.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Home</a>
+            <a href="work.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Work</a>
+            <a href="about.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">About</a>
+            <a href="#" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Services</a>
+            <a href="contact.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Contact</a>
+        </div>
+        
+        <div class="md:hidden">
+            <button class="text-white gold-text hover:text-gray-300 transition">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-[70vh] w-full flex items-center justify-center overflow-hidden bg-gray-900">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div class="absolute -right-20 -top-20 w-64 h-64 rounded-full gold-bg opacity-10 rotate-infinite"></div>
+        <div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full gold-bg opacity-10 rotate-infinite" style="animation-direction: reverse;"></div>
+        
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white animate__animated animate__fadeIn">Our <span class="gold-text text-glow">Work</span></h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto animate__animated animate__fadeIn animate__delay-1s">
+                Explore our portfolio of cinematic storytelling, commercial productions, and branded content that captivate audiences worldwide.
+            </p>
+        </div>
+    </section>
+
+    <!-- Featured Projects Grid -->
+    <section class="py-20 px-8 bg-black">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card group animate__animated animate__fadeInUp">
+                    <div class="relative overflow-hidden rounded-lg h-[500px]">
+                        <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1159&q=80" 
+                             alt="Project 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <div class="absolute bottom-8 left-8">
+                            <h3 class="text-2xl font-bold text-white mb-2">Cinematic Short Film</h3>
+                            <p class="text-gray-300 mb-4">Directing, Cinematography</p>
+                            <p class="text-gray-400 max-w-md">A compelling narrative about human connection in the digital age, featuring stunning visuals and emotional depth.</p>
+                        </div>
+                        <div class="absolute top-8 right-8 gold-text text-2xl opacity-0 group-hover:opacity-100 transition duration-500">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card group animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                    <div class="relative overflow-hidden rounded-lg h-[500px]">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                             alt="Project 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <div class="absolute bottom-8 left-8">
+                            <h3 class="text-2xl font-bold text-white mb-2">Brand Commercial</h3>
+                            <p class="text-gray-300 mb-4">Production, Post-Production</p>
+                            <p class="text-gray-400 max-w-md">An innovative commercial campaign that elevated brand awareness through strategic storytelling and visual excellence.</p>
+                        </div>
+                        <div class="absolute top-8 right-8 gold-text text-2xl opacity-0 group-hover:opacity-100 transition duration-500">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card group animate__animated animate__fadeInUp" style="animation-delay: 0.3s;">
+                    <div class="relative overflow-hidden rounded-lg h-[500px]">
+                        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1138&q=80" 
+                             alt="Project 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <div class="absolute bottom-8 left-8">
+                            <h3 class="text-2xl font-bold text-white mb-2">Documentary Series</h3>
+                            <p class="text-gray-300 mb-4">Full Production</p>
+                            <p class="text-gray-400 max-w-md">An eye-opening documentary series exploring cultural phenomena and human stories across the globe.</p>
+                        </div>
+                        <div class="absolute top-8 right-8 gold-text text-2xl opacity-0 group-hover:opacity-100 transition duration-500">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card group animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                    <div class="relative overflow-hidden rounded-lg h-[500px]">
+                        <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" 
+                             alt="Project 4" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <div class="absolute bottom-8 left-8">
+                            <h3 class="text-2xl font-bold text-white mb-2">Music Video</h3>
+                            <p class="text-gray-300 mb-4">Direction, Visual Effects</p>
+                            <p class="text-gray-400 max-w-md">A visually stunning music video combining practical effects with cutting-edge CGI to create an immersive experience.</p>
+                        </div>
+                        <div class="absolute top-8 right-8 gold-text text-2xl opacity-0 group-hover:opacity-100 transition duration-500">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="py-20 px-8 bg-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center gold-text">Categories</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Category 1 -->
+                <div class="bg-black p-8 rounded-lg hover:bg-gray-800 transition duration-500">
+                    <div class="gold-text text-3xl mb-4">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Films</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Short Films</li>
+                        <li>Feature Films</li>
+                        <li>Documentaries</li>
+                        <li>Experimental</li>
+                    </ul>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="bg-black p-8 rounded-lg hover:bg-gray-800 transition duration-500">
+                    <div class="gold-text text-3xl mb-4">
+                        <i class="fas fa-ad"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Commercial</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Brand Campaigns</li>
+                        <li>TV Commercials</li>
+                        <li>Digital Ads</li>
+                        <li>Product Launches</li>
+                    </ul>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="bg-black p-8 rounded-lg hover:bg-gray-800 transition duration-500">
+                    <div class="gold-text text-3xl mb-4">
+                        <i class="fas fa-photo-video"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Content</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Music Videos</li>
+                        <li>Corporate Videos</li>
+                        <li>Social Media</li>
+                        <li>Event Coverage</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="py-20 px-8 bg-black relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1131&q=80" 
+                 alt="Background" class="w-full h-full object-cover">
+        </div>
+        
+        <div class="max-w-4xl mx-auto relative text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Have a Project in Mind?</h2>
+            <p class="text-xl text-gray-300 mb-8">
+                Let's collaborate and bring your vision to life.
+            </p>
+            <a href="#" class="inline-block px-8 py-4 gold-bg text-black font-medium rounded-full hover:bg-amber-600 transition duration-500 transform hover:scale-105 shine">
+                Get In Touch
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-8 bg-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="logo text-2xl font-bold mb-4">
+                        <span class="text-white">LAB</span>
+                        <span class="gold-text">PICTURES</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Creating visual stories that inspire and engage audiences worldwide.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-white font-bold mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover-gold transition duration-300">Home</a></li>
+                        <li><a href="work.html" class="text-gray-400 hover-gold transition duration-300">Work</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover-gold transition duration-300">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover-gold transition duration-300">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover-gold transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-white font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover-gold transition duration-300">Film Production</a></li>
+                        <li><a href="#" class="text-gray-400 hover-gold transition duration-300">Commercials</a></li>
+                        <li><a href="#" class="text-gray-400 hover-gold transition duration-300">Post-Production</a></li>
+                        <li><a href="#" class="text-gray-400 hover-gold transition duration-300">Content Creation</a></li>
+                        <li><a href="#" class="text-gray-400 hover-gold transition duration-300">Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-white font-bold mb-4">Connect</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover-gold transition duration-300 text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover-gold transition duration-300 text-xl"><i class="fab fa-vimeo-v"></i></a>
+                        <a href="#" class="text-gray-400 hover-gold transition duration-300 text-xl"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover-gold transition duration-300 text-xl"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p class="text-gray-400">
+                        hello@labpictures.com<br>
+                        +1 (555) 123-4567
+                    </p>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    © 2023 Lab Pictures. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover-gold transition duration-300 text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover-gold transition duration-300 text-sm">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

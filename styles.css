@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.hero-video {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: #D4AF37;
+    transition: width 0.3s ease;
+}
+
+.menu-item:hover:after {
+    width: 100%;
+}
+
+.project-card {
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    transform-origin: center bottom;
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 25px 50px -12px rgba(212, 175, 55, 0.25);
+}
+
+.grid-line {
+    position: absolute;
+    background-color: rgba(212, 175, 55, 0.1);
+    height: 1px;
+    width: 100%;
+}
+
+.cursor-follower {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(212, 175, 55, 0.2);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    mix-blend-mode: difference;
+    transition: transform 0.1s ease, width 0.3s ease, height 0.3s ease;
+}
+
+.gold-text {
+    color: #D4AF37;
+}
+
+.gold-bg {
+    background-color: #D4AF37;
+}
+
+.gold-border {
+    border-color: #D4AF37;
+}
+
+.hover-gold:hover {
+    color: #D4AF37;
+}
+
+.text-outline {
+    -webkit-text-stroke: 1px #D4AF37;
+    color: transparent;
+}
+
+.floating {
+    animation: floating 6s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4); }
+    70% { box-shadow: 0 0 0 15px rgba(212, 175, 55, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+}
+
+.rotate-infinite {
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.shine {
+    position: relative;
+    overflow: hidden;
+}
+
+.shine:after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 20%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(30deg);
+    transition: all 0.8s ease;
+}
+
+.shine:hover:after {
+    left: 120%;
+}
+
+.text-glow {
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.7);
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+    height: calc(100vh - 80px);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu .py-4.px-8 {
+    padding-top: 2rem;
+}
+
+.mobile-menu a {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+    transition: all 0.3s ease;
+}
+
+.mobile-menu a:last-child {
+    border-bottom: none;
+}
+
+.mobile-menu a:hover {
+    background-color: rgba(212, 175, 55, 0.1);
+    padding-left: 2.5rem;
+}
+
+@media (max-width: 768px) {
+    .md\:hidden button {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+    }
+
+    .md\:hidden button:hover {
+        background-color: rgba(212, 175, 55, 0.1);
+    }
+
+    .md\:hidden button i {
+        transition: transform 0.3s ease;
+    }
+}
+
+.bg-pattern {
+    background-image: radial-gradient(rgba(212, 175, 55, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* Clients Carousel Styles */
+.clients-carousel {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    animation: scroll 30s linear infinite;
+    width: fit-content;
+}
+
+.carousel-track:hover {
+    animation-play-state: paused;
+}
+
+.carousel-slide {
+    min-width: 200px;
+    padding: 0 40px;
+    flex-shrink: 0;
+    user-select: none;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-slide:hover {
+    opacity: 1;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px * 8)); /* Width of one set of slides */
+    }
+}

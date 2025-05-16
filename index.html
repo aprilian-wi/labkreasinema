@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Pictures | Production House</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-follower"></div>
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 py-6 px-8 flex justify-between items-center bg-black bg-opacity-80 backdrop-blur-md">
+        <div class="logo text-2xl font-bold animate__animated animate__fadeInDown">
+            <span class="text-white">LAB</span>
+            <span class="gold-text">PICTURES</span>
+        </div>
+        
+        <div class="hidden md:flex space-x-8">
+            <a href="index.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Home</a>
+            <a href="work.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Work</a>
+            <a href="about.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">About</a>
+            <a href="#" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Services</a>
+            <a href="contact.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Contact</a>
+        </div>
+        
+        <div class="md:hidden">
+            <button class="text-white gold-text hover:text-gray-300 transition">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        <video autoplay muted loop class="hero-video">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-woman-filming-with-a-camera-1480-large.mp4" type="video/mp4">
+        </video>
+        
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        
+        <div class="absolute text-center px-4 z-10">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white animate__animated animate__fadeIn animate__delay-1s">WE CREATE VISUAL <span class="gold-text text-glow">STORIES</span></h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-8 animate__animated animate__fadeIn animate__delay-1s">
+                Lab Pictures is a production house specializing in cinematic storytelling, commercial production, and branded content.
+            </p>
+            <a href="#" class="inline-block px-8 py-3 gold-bg text-black font-medium rounded-full hover:bg-amber-600 transition duration-500 transform hover:scale-105 shine animate__animated animate__fadeInUp animate__delay-1s">
+                Explore Our Work
+            </a>
+        </div>
+        
+        <!-- Grid Lines -->
+        <div class="grid-line top-1/4"></div>
+        <div class="grid-line top-1/2"></div>
+        <div class="grid-line top-3/4"></div>
+        
+        <!-- Floating elements -->
+        <div class="absolute top-1/4 left-1/4 w-4 h-4 rounded-full gold-bg opacity-70 floating"></div>
+        <div class="absolute top-1/3 right-1/4 w-6 h-6 rounded-full gold-bg opacity-50 floating" style="animation-delay: 1s;"></div>
+        <div class="absolute bottom-1/4 right-1/3 w-8 h-8 rounded-full gold-bg opacity-30 floating" style="animation-delay: 2s;"></div>
+    </section>
+    
+    <!-- Featured Projects -->
+    <section class="py-20 px-8 bg-pattern">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center gold-text text-outline animate__animated animate__fadeIn">Featured Projects</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card group animate__animated animate__fadeInUp">
+                    <div class="relative overflow-hidden rounded-lg mb-4 h-80">
+                        <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1159&q=80" 
+                             alt="Project 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <h3 class="text-xl font-bold text-white">Cinematic Short Film</h3>
+                            <p class="text-gray-300">Directing, Cinematography</p>
+                        </div>
+                        <div class="absolute top-4 right-4 gold-text text-2xl opacity-0 group-hover:opacity-100 transition duration-500">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card group animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                    <div class="relative overflow-hidden rounded-lg mb-4 h-80">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                             alt="Project 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <h3 class="text-xl font-bold text-white">Brand Commercial</h3>
+                            <p class="text-gray-300">Production, Post-Production</p>
+                        </div>
+                        <div class="absolute top-4 right-4 gold-text text-2xl opacity-0 group-hover:opacity-100 transition duration-500">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card group animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                    <div class="relative overflow-hidden rounded-lg mb-4 h-80">
+                        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1138&q=80" 
+                             alt="Project 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <h3 class="text-xl font-bold text-white">Documentary Series</h3>
+                            <p class="text-gray-300">Full Production</p>
+                        </div>
+                        <div class="absolute top-4 right-4 gold-text text-2xl opacity-0 group-hover:opacity-100 transition duration-500">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12 animate__animated animate__fadeIn" style="animation-delay: 0.6s;">
+                <a href="#" class="inline-flex items-center text-white group hover-gold transition duration-300">
+                    <span class="mr-2">View All Projects</span>
+                    <i class="fas fa-arrow-right group-hover:translate-x-2 transition duration-300"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="py-20 px-8 bg-gray-900 relative overflow-hidden">
+        <div class="absolute -right-20 -top-20 w-64 h-64 rounded-full gold-bg opacity-10 rotate-infinite"></div>
+        <div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full gold-bg opacity-10 rotate-infinite" style="animation-direction: reverse;"></div>
+        
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="animate__animated animate__fadeInLeft">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 gold-text">About Lab Pictures</h2>
+                <p class="text-gray-300 mb-6">
+                    Founded in 2015, Lab Pictures is a collective of filmmakers, storytellers, and visual artists dedicated to creating compelling narratives across various mediums.
+                </p>
+                <p class="text-gray-300 mb-8">
+                    Our team brings together diverse expertise in cinematography, directing, editing, and production to deliver high-quality visual content that resonates with audiences.
+                </p>
+                <a href="#" class="inline-flex items-center text-white group hover-gold transition duration-300">
+                    <span class="mr-2">Learn More About Us</span>
+                    <i class="fas fa-arrow-right group-hover:translate-x-2 transition duration-300"></i>
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4 animate__animated animate__fadeInRight">
+                <div class="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition duration-500 transform hover:-translate-y-2">
+                    <div class="gold-text text-3xl mb-4">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Film Production</h3>
+                    <p class="text-gray-400">Feature films, short films, and documentaries</p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition duration-500 transform hover:-translate-y-2" style="transition-delay: 0.1s;">
+                    <div class="gold-text text-3xl mb-4">
+                        <i class="fas fa-ad"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Commercials</h3>
+                    <p class="text-gray-400">Branded content and advertisements</p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition duration-500 transform hover:-translate-y-2" style="transition-delay: 0.2s;">
+                    <div class="gold-text text-3xl mb-4">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Post-Production</h3>
+                    <p class="text-gray-400">Editing, color grading, and VFX</p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition duration-500 transform hover:-translate-y-2" style="transition-delay: 0.3s;">
+                    <div class="gold-text text-3xl mb-4">
+                        <i class="fas fa-photo-video"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Content Creation</h3>
+                    <p class="text-gray-400">Digital media and social content</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Clients Section -->
+    <section class="py-20 bg-black relative overflow-hidden">
+        <div class="w-full">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center gold-text text-outline animate__animated animate__fadeIn">Our Clients</h2>
+            
+            <div class="clients-carousel animate__animated animate__fadeIn" style="animation-delay: 0.2s;">
+                <div class="carousel-track flex space-x-12 overflow-hidden">
+                    <!-- Original slides -->
+                    <div class="carousel-slide flex-shrink-0 text-center text-gray-400 text-2xl md:text-3xl font-medium hover-gold transition duration-300">Netflix</div>
+                    <div class="carousel-slide flex-shrink-0 text-center text-gray-400 text-2xl md:text-3xl font-medium hover-gold transition duration-300">Amazon</div>
+                    <div class="carousel-slide flex-shrink-0 text-center text-gray-400 text-2xl md:text-3xl font-medium hover-gold transition duration-300">Nike</div>
+                    <div class="carousel-slide flex-shrink-0 text-center text-gray-400 text-2xl md:text-3xl font-medium hover-gold transition duration-300">Apple</div>
+                    <div class="carousel-slide flex-shrink-0 text-center text-gray-400 text-2xl md:text-3xl font-medium hover-gold transition duration-300">Sony</div>
+                    <div class="carousel-slide flex-shrink-0 text-center text-gray-400 text-2xl md:text-3xl font-medium hover-gold transition duration-300">Adidas</div>
+                    <div class="carousel-slide flex-shrink-0 text-center text-gray-400 text-2xl md:text-3xl font-medium hover-gold transition duration-300">BMW</div>
+                    <div class="carousel-slide flex-shrink-0 text-center text-gray-400 text-2xl md:text-3xl font-medium hover-gold transition duration-300">Coca-Cola</div>
+                    <!-- Duplicated slides for seamless loop -->
+                    <div class="carousel-slide flex-shrink-0 text-center text-gray-400 text-2xl md:text-3xl font-medium hover-gold transition duration-300">Netflix</div>
+                    <div class="carousel-slide flex-shrink-0 text-center text-gray-400 text-2xl md:text-3xl font-medium hover-gold transition duration-300">Amazon</div>
+                    <div class="carousel-slide flex-shrink-0 text-center text-gray-400 text-2xl md:text-3xl font-medium hover-gold transition duration-300">Nike</div>
+                    <div class="carousel-slide flex-shrink-0 text-center text-gray-400 text-2xl md:text-3xl font-medium hover-gold transition duration-300">Apple</div>
+                    <div class="carousel-slide flex-shrink-0 text-center text-gray-400 text-2xl md:text-3xl font-medium hover-gold transition duration-300">Sony</div>
+                    <div class="carousel-slide flex-shrink-0 text-center text-gray-400 text-2xl md:text-3xl font-medium hover-gold transition duration-300">Adidas</div>
+                    <div class="carousel-slide flex-shrink-0 text-center text-gray-400 text-2xl md:text-3xl font-medium hover-gold transition duration-300">BMW</div>
+                    <div class="carousel-slide flex-shrink-0 text-center text-gray-400 text-2xl md:text-3xl font-medium hover-gold transition duration-300">Coca-Cola</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="py-20 px-8 bg-gray-900 relative overflow-hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="absolute -right-40 -top-40 w-80 h-80 rounded-full gold-bg opacity-10 rotate-infinite"></div>
+        
+        <div class="max-w-4xl mx-auto relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center gold-text animate__animated animate__fadeIn">What People Say</h2>
+            
+            <div class="relative animate__animated animate__fadeIn" style="animation-delay: 0.2s;">
+                <div class="testimonial-slide">
+                    <div class="text-center">
+                        <p class="text-xl md:text-2xl text-gray-300 italic mb-8">
+                            "Working with Lab Pictures was an exceptional experience. Their attention to detail and creative vision brought our project to life in ways we couldn't have imagined."
+                        </p>
+                        <div class="text-white">
+                            <h4 class="font-bold">Sarah Johnson</h4>
+                            <p class="text-gray-400">Creative Director, Brand X</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex justify-center mt-8 space-x-2">
+                    <button class="w-3 h-3 rounded-full bg-gray-600 hover:gold-bg transition duration-300"></button>
+                    <button class="w-3 h-3 rounded-full bg-gray-400 hover:gold-bg transition duration-300"></button>
+                    <button class="w-3 h-3 rounded-full bg-gray-600 hover:gold-bg transition duration-300"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="py-32 px-8 bg-black relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1131&q=80" 
+                 alt="Background" class="w-full h-full object-cover">
+        </div>
+        
+        <div class="max-w-4xl mx-auto relative text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white animate__animated animate__fadeIn">Ready to Create Something Amazing?</h2>
+            <p class="text-xl text-gray-300 mb-8 animate__animated animate__fadeIn" style="animation-delay: 0.2s;">
+                Let's collaborate on your next project. Our team is ready to bring your vision to life.
+            </p>
+            <a href="#" class="inline-block px-8 py-4 gold-bg text-black font-medium rounded-full hover:bg-amber-600 transition duration-500 transform hover:scale-105 pulse animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                Get In Touch
+            </a>
+        </div>
+        
+        <!-- Floating elements -->
+        <div class="absolute top-1/4 left-1/4 w-4 h-4 rounded-full gold-bg opacity-70 floating"></div>
+        <div class="absolute top-1/3 right-1/4 w-6 h-6 rounded-full gold-bg opacity-50 floating" style="animation-delay: 1s;"></div>
+        <div class="absolute bottom-1/4 right-1/3 w-8 h-8 rounded-full gold-bg opacity-30 floating" style="animation-delay: 2s;"></div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="py-12 px-8 bg-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div class="animate__animated animate__fadeIn">
+                    <div class="logo text-2xl font-bold mb-4">
+                        <span class="text-white">LAB</span>
+                        <span class="gold-text">PICTURES</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Creating visual stories that inspire and engage audiences worldwide.
+                    </p>
+                </div>
+                
+                <div class="animate__animated animate__fadeIn" style="animation-delay: 0.1s;">
+                    <h3 class="text-white font-bold mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover-gold transition duration-300">Home</a></li>
+                        <li><a href="work.html" class="text-gray-400 hover-gold transition duration-300">Work</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover-gold transition duration-300">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover-gold transition duration-300">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover-gold transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="animate__animated animate__fadeIn" style="animation-delay: 0.2s;">
+                    <h3 class="text-white font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover-gold transition duration-300">Film Production</a></li>
+                        <li><a href="#" class="text-gray-400 hover-gold transition duration-300">Commercials</a></li>
+                        <li><a href="#" class="text-gray-400 hover-gold transition duration-300">Post-Production</a></li>
+                        <li><a href="#" class="text-gray-400 hover-gold transition duration-300">Content Creation</a></li>
+                        <li><a href="#" class="text-gray-400 hover-gold transition duration-300">Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="animate__animated animate__fadeIn" style="animation-delay: 0.3s;">
+                    <h3 class="text-white font-bold mb-4">Connect</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover-gold transition duration-300 text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover-gold transition duration-300 text-xl"><i class="fab fa-vimeo-v"></i></a>
+                        <a href="#" class="text-gray-400 hover-gold transition duration-300 text-xl"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover-gold transition duration-300 text-xl"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p class="text-gray-400">
+                        hello@labpictures.com<br>
+                        +1 (555) 123-4567
+                    </p>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center animate__animated animate__fadeIn">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    © 2023 Lab Pictures. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover-gold transition duration-300 text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover-gold transition duration-300 text-sm">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
