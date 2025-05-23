@@ -16,7 +16,7 @@
     <!-- Navigation -->
     <nav class="fixed top-0 left-0 w-full z-50 py-6 px-8 flex justify-between items-center bg-black bg-opacity-80 backdrop-blur-md">
         <div class="logo animate__animated animate__fadeInDown">
-            <img src="assets/logo-lab-pictures.png" alt="Lab Pictures Logo" class="h-10 w-auto">
+            <img src="assets/logo-lab-pictures.png" alt="Lab Pictures Logo" class="h-12 w-auto"">
         </div>
         
         <div class="hidden md:flex space-x-8">
@@ -113,60 +113,31 @@
         <div class="max-w-7xl mx-auto">
             <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center gold-text">Our Leadership</h2>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="space-y-10">
                 <!-- Team Member 1 -->
-                <div class="bg-gray-900 rounded-lg overflow-hidden hover:bg-gray-800 transition duration-500 animate__animated animate__fadeInUp group">
-                    <div class="relative h-80 overflow-hidden">
-                        <img src="assets/adhe-dharmastriya.jpg" 
-                             alt="Adhe Dharmastriya" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="flex flex-col md:flex-row bg-gray-900 rounded-lg overflow-hidden hover:bg-gray-800 transition duration-500 animate__animated animate__fadeInUp group">
+                    
+                    <!-- Image Section -->
+                    <div class="w-full md:w-80 h-64 md:h-auto flex-shrink-0 overflow-hidden relative">
+                        <img src="assets/elsaputra-djaja.jpg"
+                            alt="Elsaputra Djaja Justia"
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-70"></div>
                     </div>
-                    <div class="p-8">
-                        <h3 class="text-xl font-bold text-white mb-2">Adhe Dharmastriya</h3>
-                        <p class="text-gray-400 mb-4">Director & Producer</p>
-                        <p class="text-gray-300">
-                            10+ years of experience in film and commercial production, bringing creative vision to life.
-                        </p>
-                    </div>
-                </div>
 
-                <!-- Team Member 2 -->
-                <div class="bg-gray-900 rounded-lg overflow-hidden hover:bg-gray-800 transition duration-500 animate__animated animate__fadeInUp group" style="animation-delay: 0.2s;">
-                    <div class="relative h-80 overflow-hidden">
-                        <img src="assets/elsaputra-djaja.jpg" 
-                             alt="Elsaputra Djaja Justia" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-70"></div>
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-xl font-bold text-white mb-2">Elsaputra Djaja Justia</h3>
-                        <p class="text-gray-400 mb-4">Executive Producer</p>
-                        <p class="text-gray-300">
+                    <!-- Text Section -->
+                    <div class="flex-1 p-8 flex flex-col justify-center">
+                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-3">Elsaputra Djaja Justia</h3>
+                        <p class="text-lg md:text-xl text-gray-400 mb-4">Executive Producer</p>
+                        <p class="text-base md:text-lg text-gray-300 leading-relaxed">
                             Entrepreneur with deep experience in digital media and finance.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Team Member 3 -->
-                <div class="bg-gray-900 rounded-lg overflow-hidden hover:bg-gray-800 transition duration-500 animate__animated animate__fadeInUp group" style="animation-delay: 0.4s;">
-                    <div class="relative h-80 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
-                             alt="Richard Suwandi Lie" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-70"></div>
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-xl font-bold text-white mb-2">Richard Suwandi Lie</h3>
-                        <p class="text-gray-400 mb-4">Commissioner</p>
-                        <p class="text-gray-300">
-                            20+ years of entrepreneurial experience across multiple industries.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Contact CTA -->
     <section class="py-20 px-8 bg-gray-900 relative overflow-hidden">
@@ -180,7 +151,7 @@
             <p class="text-xl text-gray-300 mb-8">
                 Join us in crafting meaningful stories that resonate with audiences.
             </p>
-            <a href="#" class="inline-block px-8 py-4 gold-bg text-black font-medium rounded-full hover:bg-amber-600 transition duration-500 transform hover:scale-105 shine">
+            <a href="contact.html" class="inline-block px-8 py-4 gold-bg text-black font-medium rounded-full hover:bg-amber-600 transition duration-500 transform hover:scale-105 shine">
                 Get In Touch
             </a>
         </div>
@@ -190,17 +161,16 @@
     <footer class="py-12 px-8 bg-gray-900">
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-                <div>
+                <div class="animate__animated animate__fadeIn">
                     <div class="logo text-2xl font-bold mb-4">
-                        <span class="text-white">LAB</span>
-                        <span class="gold-text">PICTURES</span>
+                        <span class="gold-text">LAB PICTURES</span>
                     </div>
                     <p class="text-gray-400">
                         Creating visual stories that inspire and engage audiences worldwide.
                     </p>
                 </div>
                 
-                <div>
+                <div class="animate__animated animate__fadeIn" style="animation-delay: 0.1s;">
                     <h3 class="text-white font-bold mb-4">Navigation</h3>
                     <ul class="space-y-2">
                         <li><a href="index.html" class="text-gray-400 hover-gold transition duration-300">Home</a></li>
@@ -211,14 +181,14 @@
                     </ul>
                 </div>
                 
-                <div>
+                <div class="animate__animated animate__fadeIn" style="animation-delay: 0.2s;">
                     <h3 class="text-white font-bold mb-4">Services</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover-gold transition duration-300">Film Production</a></li>
-                        <li><a href="#" class="text-gray-400 hover-gold transition duration-300">Commercials</a></li>
-                        <li><a href="#" class="text-gray-400 hover-gold transition duration-300">Post-Production</a></li>
-                        <li><a href="#" class="text-gray-400 hover-gold transition duration-300">Content Creation</a></li>
-                        <li><a href="#" class="text-gray-400 hover-gold transition duration-300">Consulting</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Film Production</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Commercials</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Post-Production</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Content Creation</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Consulting</a></li>
                     </ul>
                 </div>
                 
@@ -227,7 +197,7 @@
                     <div class="flex space-x-4 mb-4">
                         <a href="https://www.instagram.com/labpicturesinema?igsh=aHhqcGhmb2Nwa2oz&utm_source=qr" class="text-gray-400 hover-gold transition duration-300 text-xl"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.tiktok.com/@labpictures?_t=ZS-8wYrpEoMQye&_r=1" class="text-gray-400 hover-gold transition duration-300 text-xl"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://x.com/infolabpictures?s=21&t=7QQwUuzSWeiQHi3HAYGI3w" class="text-gray-400 hover-gold transition duration-300 text-xl"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://x.com/infolabpictures?s=21&t=7QQwUuzSWeiQHi3HAYGI3w" class="text-gray-400 hover-gold transition duration-300 text-xl"><i class="fab fa-twitter"></i></a>
                         <a href="https://youtube.com/@labpicturesinema?feature=shared" class="text-gray-400 hover-gold transition duration-300 text-xl"><i class="fab fa-youtube"></i></a>
                     </div>
                     <p class="text-gray-400">
@@ -237,9 +207,9 @@
                 </div>
             </div>
             
-            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center animate__animated animate__fadeIn">
                 <p class="text-gray-400 text-sm mb-4 md:mb-0">
-                    © 2023 Lab Pictures. All rights reserved.
+                    © 2025 Lab Pictures. All rights reserved.
                 </p>
                 <div class="flex space-x-6">
                     <a href="#" class="text-gray-400 hover-gold transition duration-300 text-sm">Privacy Policy</a>
