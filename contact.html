@@ -18,21 +18,32 @@
         <div class="logo animate__animated animate__fadeInDown">
             <img src="assets/logo-lab-pictures.png" alt="Lab Pictures Logo" class="h-12 w-auto">
         </div>
-        
-        <div class="hidden md:flex space-x-8">
+        <!-- Desktop Menu -->
+        <div id="main-menu" class="hidden md:flex space-x-8">
             <a href="index.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Home</a>
             <a href="work.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Work</a>
             <a href="about.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">About</a>
             <a href="services.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Services</a>
             <a href="contact.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Contact</a>
         </div>
-        
+        <!-- Hamburger Button -->
         <div class="md:hidden">
-            <button class="text-white gold-text hover:text-gray-300 transition">
-                <i class="fas fa-bars text-xl"></i>
+            <button id="menu-toggle" class="text-white gold-text hover:text-gray-300 transition" aria-label="Open menu">
+                <i class="fas fa-bars text-2xl"></i>
             </button>
         </div>
     </nav>
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 z-50 flex flex-col items-center justify-center space-y-8 text-xl text-white transition-all duration-300 hidden">
+        <button id="menu-close" class="absolute top-6 right-8 text-white text-3xl" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <a href="index.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
+        <a href="work.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Work</a>
+        <a href="about.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
+        <a href="services.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Services</a>
+        <a href="contact.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+    </div>
 
     <!-- Hero Section -->
     <section class="relative h-[70vh] w-full flex items-center justify-center overflow-hidden bg-gray-900">

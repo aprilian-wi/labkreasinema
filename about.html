@@ -18,21 +18,32 @@
         <div class="logo animate__animated animate__fadeInDown">
             <img src="assets/logo-lab-pictures.png" alt="Lab Pictures Logo" class="h-12 w-auto">
         </div>
-        
-        <div class="hidden md:flex space-x-8">
+        <!-- Desktop Menu -->
+        <div id="main-menu" class="hidden md:flex space-x-8">
             <a href="index.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Home</a>
             <a href="work.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Work</a>
             <a href="about.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">About</a>
             <a href="services.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Services</a>
             <a href="contact.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Contact</a>
         </div>
-        
+        <!-- Hamburger Button -->
         <div class="md:hidden">
-            <button class="text-white gold-text hover:text-gray-300 transition">
-                <i class="fas fa-bars text-xl"></i>
+            <button id="menu-toggle" class="text-white gold-text hover:text-gray-300 transition" aria-label="Open menu">
+                <i class="fas fa-bars text-2xl"></i>
             </button>
         </div>
     </nav>
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 z-50 flex flex-col items-center justify-center space-y-8 text-xl text-white transition-all duration-300 hidden">
+        <button id="menu-close" class="absolute top-6 right-8 text-white text-3xl" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <a href="index.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
+        <a href="work.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Work</a>
+        <a href="about.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
+        <a href="services.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Services</a>
+        <a href="contact.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+    </div>
 
     <!-- Hero Section -->
     <section class="relative h-[70vh] w-full flex items-center justify-center overflow-hidden bg-gray-900">
@@ -86,9 +97,9 @@
                     <h3 class="text-2xl font-bold text-white mb-4">Visi</h3>
                     <ol class="text-gray-300 list-decimal list-inside space-y-2">
                         <li>Menjadi salah satu perusahaan produksi film terkemuka di Indonesia.</li>
-                        <li>Menghasilkan konten film yang berkualitas, inovatif dan inspiratif.</li>
-                        <li>Membangun industri film yang sehat dan berkelanjutan.</li>
-                        <li>Menjadi rujukan bagi industri film di Asia.</li>
+                        <li>Menghasilkan konten film yang imagenatif berkualitas inovatif dan inspiratif.</li>
+                        <li>Membangun industri kreatif yang sehat dan berkelanjutan.</li>
+                        <li>Menjadi pioneer industri kreatif di asia.</li>
                     </ol>
                 </div>
 
@@ -99,11 +110,11 @@
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Misi</h3>
                     <ol class="text-gray-300 list-decimal list-inside space-y-2">
-                        <li>Mengembangkan cerita yang unik dan menarik bagi audien.</li>
+                        <li>Mengembangkan kreativitas cerita yang unik dan menarik bagi audien.</li>
+                        <li>Menciptakan konten yang faktual mendidik, menghibur, dan mebangun kesadaran sosial.</li>
+                        <li>Membangun tim kreatif yang professional dan kaliber internasional.</li>
                         <li>Meningkatkan kualitas produksi film melalui teknologi dan inovasi.</li>
-                        <li>Membangun tim kreatif yang profesional dan berdedikasi.</li>
-                        <li>Menciptakan konten yang mendidik, menghibur dan membangun kesadaran sosial.</li>
-                        <li>Meningkatkan kesadaran akan pentingnya industri film bagi budaya dan ekonomi.</li>
+                        <li>Meningkatkan kesadaran akan pentingnya industri kreatif bagi budaya dan ekonomi.</li>
                     </ol>
                 </div>
             </div>
@@ -130,9 +141,9 @@
                     <!-- Text Section -->
                     <div class="flex-1 p-8 flex flex-col justify-center">
                         <h3 class="text-2xl md:text-3xl font-bold text-white mb-3">Elsaputra Djaja Justia</h3>
-                        <p class="text-lg md:text-xl text-gray-400 mb-4">Founder & Producer</p>
+                        <p class="text-lg md:text-xl text-gray-400 mb-4">Founder & Executive Producer</p>
                         <p class="text-base md:text-lg text-gray-300 leading-relaxed">
-                            Entrepreneur with deep experience in digital media and finance.
+                            Entrepreneur with deep experience in digital entertainment, in TV media and finance.
                         </p>
                     </div>
                 </div>
