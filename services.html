@@ -14,12 +14,12 @@
     <div class="cursor-follower"></div>
     
     <!-- Navigation -->
-    <nav id="main-navbar" class="fixed top-0 left-0 w-full z-50 py-6 px-8 flex justify-between items-center transition-all duration-300 bg-transparent">
+    <nav id="main-navbar" class="fixed top-0 left-0 w-full z-50 py-6 px-4 md:px-8 flex justify-between items-center transition-all duration-300 bg-transparent">
         <div class="logo animate__animated animate__fadeInDown">
             <img src="assets/logo-lab-pictures.png" alt="Lab Pictures Logo" class="h-12 w-auto">
         </div>
         
-        <div class="hidden md:flex space-x-8">
+        <div id="main-menu" class="hidden md:flex space-x-8">
             <a href="index.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Home</a>
             <a href="work.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Work</a>
             <a href="about.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">About</a>
@@ -28,11 +28,22 @@
         </div>
         
         <div class="md:hidden">
-            <button class="text-white gold-text hover:text-gray-300 transition">
-                <i class="fas fa-bars text-xl"></i>
+            <button id="menu-toggle" class="text-white gold-text hover:text-gray-300 transition" aria-label="Open menu">
+                <i class="fas fa-bars text-2xl"></i>
             </button>
         </div>
     </nav>
+
+    <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 z-50 flex flex-col items-center justify-center space-y-8 text-xl text-white transition-all duration-300 hidden">
+        <button id="menu-close" class="absolute top-6 right-8 text-white text-3xl" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <a href="index.html" class="menu-item text-white text-lg uppercase tracking-wider hover-gold transition duration-300">Home</a>
+        <a href="work.html" class="menu-item text-white text-lg uppercase tracking-wider hover-gold transition duration-300">Work</a>
+        <a href="about.html" class="menu-item text-white text-lg uppercase tracking-wider hover-gold transition duration-300">About</a>
+        <a href="services.html" class="menu-item text-white text-lg uppercase tracking-wider hover-gold transition duration-300">Services</a>
+        <a href="contact.html" class="menu-item text-white text-lg uppercase tracking-wider hover-gold transition duration-300">Contact</a>
+    </div>
 
     <!-- Hero Section -->
     <section class="relative h-[60vh] w-full flex items-center justify-center overflow-hidden bg-black">
