@@ -62,3 +62,16 @@ document.addEventListener("DOMContentLoaded", function () {
             });
     });
 });
+
+// Navbar transparent on top, solid on scroll (global untuk semua halaman)
+window.addEventListener('scroll', function() {
+    const navbar = document.getElementById('main-navbar');
+    if (!navbar) return;
+    if (window.scrollY > 10) {
+        navbar.classList.remove('bg-transparent');
+        navbar.classList.add('bg-black', 'bg-opacity-80', 'backdrop-blur-md');
+    } else {
+        navbar.classList.add('bg-transparent');
+        navbar.classList.remove('bg-black', 'bg-opacity-80', 'backdrop-blur-md');
+    }
+});
