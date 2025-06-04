@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | Lab Pictures</title>
+    <title>Layanan | Lab Pictures</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <!-- Custom Cursor -->
@@ -16,44 +16,44 @@
     <!-- Navigation -->
     <nav id="main-navbar" class="fixed top-0 left-0 w-full z-50 py-6 px-4 md:px-8 flex justify-between items-center transition-all duration-300 bg-transparent">
         <div class="logo animate__animated animate__fadeInDown">
-            <img src="assets/logo-lab-pictures.png" alt="Lab Pictures Logo" class="h-12 w-auto">
+            <img src="../assets/logo-lab-pictures.png" alt="Logo Lab Pictures" class="h-12 w-auto">
         </div>
         <!-- Desktop Menu -->
         <div id="main-menu" class="hidden md:flex space-x-8 items-center">
-            <a href="index.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Home</a>
-            <a href="work.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Work</a>
-            <a href="about.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">About</a>
-            <a href="services.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Services</a>
-            <a href="contact.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Contact</a>
+            <a href="index.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Beranda</a>
+            <a href="work.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Karya</a>
+            <a href="about.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Tentang</a>
+            <a href="services.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Layanan</a>
+            <a href="contact.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Kontak</a>
             <!-- Language Switcher -->
             <div class="ml-4 flex items-center space-x-2">
-                <a href="services.html" class="text-white text-xs font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">EN</a>
+                <a href="../services.html" class="text-white text-xs font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">EN</a>
                 <span class="text-gray-400">|</span>
-                <a href="ID/services.html" class="text-white text-xs font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">ID</a>
+                <a href="services.html" class="text-white text-xs font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">ID</a>
             </div>
         </div>
         <!-- Hamburger Button -->
         <div class="md:hidden">
-            <button id="menu-toggle" class="text-white gold-text hover:text-gray-300 transition" aria-label="Open menu">
+            <button id="menu-toggle" class="text-white gold-text hover:text-gray-300 transition" aria-label="Buka menu">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </div>
     </nav>
     <!-- Mobile Menu (hidden by default) -->
     <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 z-50 flex flex-col items-center justify-center space-y-8 text-xl text-white transition-all duration-300 hidden">
-        <button id="menu-close" class="absolute top-6 right-8 text-white text-3xl" aria-label="Close menu">
+        <button id="menu-close" class="absolute top-6 right-8 text-white text-3xl" aria-label="Tutup menu">
             <i class="fas fa-times"></i>
         </button>
-        <a href="index.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
-        <a href="work.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Work</a>
-        <a href="about.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
-        <a href="services.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Services</a>
-        <a href="contact.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+        <a href="index.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Beranda</a>
+        <a href="work.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Karya</a>
+        <a href="about.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Tentang</a>
+        <a href="services.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Layanan</a>
+        <a href="contact.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Kontak</a>
         <!-- Language Switcher Mobile -->
         <div class="flex items-center space-x-2 mt-4">
-            <a href="services.html" class="text-white text-base font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">EN</a>
+            <a href="../services.html" class="text-white text-base font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">EN</a>
             <span class="text-gray-400">|</span>
-            <a href="ID/services.html" class="text-white text-base font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">ID</a>
+            <a href="services.html" class="text-white text-base font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">ID</a>
         </div>
     </div>
 
@@ -61,9 +61,9 @@
     <section class="relative h-[60vh] w-full flex items-center justify-center overflow-hidden bg-black">
         <div class="absolute inset-0 bg-black bg-opacity-60"></div>
         <div class="absolute text-center px-4 z-10">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white animate__animated animate__fadeIn">Our <span class="gold-text text-glow">Services</span></h1>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white animate__animated animate__fadeIn">Layanan <span class="gold-text text-glow">Kami</span></h1>
             <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto animate__animated animate__fadeIn animate__delay-1s">
-                Comprehensive production solutions tailored to your creative vision
+                Solusi produksi menyeluruh yang disesuaikan dengan visi kreatif Anda.
             </p>
         </div>
     </section>
@@ -77,20 +77,20 @@
                     <div class="gold-text text-4xl mb-6">
                         <i class="fas fa-film"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Film Production</h3>
-                    <p class="text-gray-400 mb-6">Full-service film production from concept to completion. We handle everything from pre-production planning to final delivery.</p>
+                    <h3 class="text-2xl font-bold text-white mb-4">Produksi Film</h3>
+                    <p class="text-gray-400 mb-6">Layanan produksi film lengkap dari konsep hingga selesai. Kami menangani semua tahapan mulai dari pra-produksi hingga distribusi akhir.</p>
                     <ul class="text-gray-400 space-y-2">
                         <li class="flex items-center">
                             <i class="fas fa-check gold-text mr-2"></i>
-                            Feature Films
+                            Film Layar Lebar
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-check gold-text mr-2"></i>
-                            Short Films
+                            Film Pendek
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-check gold-text mr-2"></i>
-                            Documentaries
+                            Dokumenter
                         </li>
                     </ul>
                 </div>
@@ -100,20 +100,20 @@
                     <div class="gold-text text-4xl mb-6">
                         <i class="fas fa-ad"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Media Agency</h3>
-                    <p class="text-gray-400 mb-6">Create compelling commercial content that engages your audience and drives results for your brand.</p>
+                    <h3 class="text-2xl font-bold text-white mb-4">Agensi Media</h3>
+                    <p class="text-gray-400 mb-6">Membuat konten komersial yang menarik untuk audiens Anda dan meningkatkan hasil untuk merek Anda.</p>
                     <ul class="text-gray-400 space-y-2">
                         <li class="flex items-center">
                             <i class="fas fa-check gold-text mr-2"></i>
-                            TV Commercials
+                            Iklan TV
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-check gold-text mr-2"></i>
-                            Digital Ads
+                            Iklan Digital
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-check gold-text mr-2"></i>
-                            Brand Videos
+                            Video Brand
                         </li>
                     </ul>
                 </div>
@@ -123,25 +123,23 @@
                     <div class="gold-text text-4xl mb-6">
                         <i class="fas fa-video"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Series Production</h3>
-                    <p class="text-gray-400 mb-6">Expert post-production services to enhance and perfect your visual content.</p>
-                    <ul class="text-gray-400 space-y-2">
-                        <li class="hidden flex items-center">
+                    <h3 class="text-2xl font-bold text-white mb-4">Produksi Series</h3>
+                    <p class="text-gray-400 mb-6">Layanan pascaproduksi profesional untuk menyempurnakan dan memperindah konten visual Anda.</p>
+                    <ul class="hidden text-gray-400 space-y-2">
+                        <li class="flex items-center">
                             <i class="fas fa-check gold-text mr-2"></i>
-                            Video Editing
+                            Editing Video
                         </li>
-                        <li class="hidden flex items-center">
+                        <li class="flex items-center">
                             <i class="fas fa-check gold-text mr-2"></i>
                             Color Grading
                         </li>
-                        <li class="hidden flex items-center">
+                        <li class="flex items-center">
                             <i class="fas fa-check gold-text mr-2"></i>
-                            Visual Effects
+                            Efek Visual
                         </li>
                     </ul>
                 </div>
-
-                
             </div>
         </div>
     </section>
@@ -149,12 +147,12 @@
     <!-- CTA Section -->
     <section class="py-20 px-8 bg-gray-900">
         <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-4xl md:text-5xl font-bold mb-6 gold-text">Ready to Start Your Project?</h2>
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 gold-text">Siap Memulai Proyek Anda?</h2>
             <p class="text-xl text-gray-300 mb-8">
-                Let's discuss how we can help bring your vision to life.
+                Mari diskusikan bagaimana kami dapat membantu mewujudkan visi Anda.
             </p>
             <a href="contact.html" class="inline-block px-8 py-4 gold-bg text-black font-medium rounded-full hover:bg-amber-600 transition duration-500 transform hover:scale-105">
-                Get in Touch
+                Hubungi Kami
             </a>
         </div>
     </section>
@@ -168,32 +166,29 @@
                         <span class="gold-text">LAB PICTURES</span>
                     </div>
                     <p class="text-gray-400">
-                        Creating visual stories that inspire and engage audiences worldwide.
+                        Menciptakan kisah visual yang menginspirasi dan melibatkan audiens di seluruh dunia.
                     </p>
                 </div>
-                
                 <div class="animate__animated animate__fadeIn" style="animation-delay: 0.1s;">
-                    <h3 class="text-white font-bold mb-4">Navigation</h3>
+                    <h3 class="text-white font-bold mb-4">Navigasi</h3>
                     <ul class="space-y-2">
-                        <li><a href="index.html" class="text-gray-400 hover-gold transition duration-300">Home</a></li>
-                        <li><a href="work.html" class="text-gray-400 hover-gold transition duration-300">Work</a></li>
-                        <li><a href="about.html" class="text-gray-400 hover-gold transition duration-300">About</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Services</a></li>
-                        <li><a href="contact.html" class="text-gray-400 hover-gold transition duration-300">Contact</a></li>
+                        <li><a href="index.html" class="text-gray-400 hover-gold transition duration-300">Beranda</a></li>
+                        <li><a href="work.html" class="text-gray-400 hover-gold transition duration-300">Karya</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover-gold transition duration-300">Tentang</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Layanan</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover-gold transition duration-300">Kontak</a></li>
                     </ul>
                 </div>
-                
                 <div class="animate__animated animate__fadeIn" style="animation-delay: 0.2s;">
-                    <h3 class="text-white font-bold mb-4">Services</h3>
+                    <h3 class="text-white font-bold mb-4">Layanan</h3>
                     <ul class="space-y-2">
-                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Film Production</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Commercials</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Series Production</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Produksi Film</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Iklan Komersial</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Produksi Series</a></li>
                     </ul>
                 </div>
-                
                 <div class="animate__animated animate__fadeIn" style="animation-delay: 0.3s;">
-                    <h3 class="text-white font-bold mb-4">Connect</h3>
+                    <h3 class="text-white font-bold mb-4">Kontak</h3>
                     <div class="flex space-x-4 mb-4">
                         <a href="https://www.instagram.com/labpicturesinema?igsh=aHhqcGhmb2Nwa2oz&utm_source=qr" class="text-gray-400 hover-gold transition duration-300 text-xl"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.tiktok.com/@labpictures?_t=ZS-8wYrpEoMQye&_r=1" class="text-gray-400 hover-gold transition duration-300 text-xl"><i class="fab fa-tiktok"></i></a>
@@ -206,19 +201,17 @@
                     </p>
                 </div>
             </div>
-            
             <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center animate__animated animate__fadeIn">
                 <p class="text-gray-400 text-sm mb-4 md:mb-0">
-                    © 2025 Lab Pictures. All rights reserved.
+                    © 2025 Lab Pictures. Seluruh hak cipta dilindungi.
                 </p>
                 <div class="flex space-x-6">
-                    <a href="#" class="text-gray-400 hover-gold transition duration-300 text-sm">Privacy Policy</a>
-                    <a href="#" class="text-gray-400 hover-gold transition duration-300 text-sm">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover-gold transition duration-300 text-sm">Kebijakan Privasi</a>
+                    <a href="#" class="text-gray-400 hover-gold transition duration-300 text-sm">Syarat & Ketentuan</a>
                 </div>
             </div>
         </div>
     </footer>
-
-    <script src="scripts.js"></script>
+    <script src="../scripts.js"></script>
 </body>
 </html>

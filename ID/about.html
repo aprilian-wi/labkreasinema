@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Lab Pictures</title>
+    <title>Tentang Kami | Lab Pictures</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <!-- Custom Cursor -->
@@ -16,44 +16,44 @@
     <!-- Navigation -->
     <nav id="main-navbar" class="fixed top-0 left-0 w-full z-50 py-6 px-4 md:px-8 flex justify-between items-center transition-all duration-300 bg-transparent">
         <div class="logo animate__animated animate__fadeInDown">
-            <img src="assets/logo-lab-pictures.png" alt="Lab Pictures Logo" class="h-12 w-auto">
+            <img src="../assets/logo-lab-pictures.png" alt="Logo Lab Pictures" class="h-12 w-auto">
         </div>
         <!-- Desktop Menu -->
         <div id="main-menu" class="hidden md:flex space-x-8 items-center">
-            <a href="index.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Home</a>
-            <a href="work.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Work</a>
-            <a href="about.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">About</a>
-            <a href="services.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Services</a>
-            <a href="contact.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Contact</a>
+            <a href="index.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Beranda</a>
+            <a href="work.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Karya</a>
+            <a href="about.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Tentang</a>
+            <a href="services.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Layanan</a>
+            <a href="contact.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Kontak</a>
             <!-- Language Switcher -->
             <div class="ml-4 flex items-center space-x-2">
-                <a href="about.html" class="text-white text-xs font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">EN</a>
+                <a href="../about.html" class="text-white text-xs font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">EN</a>
                 <span class="text-gray-400">|</span>
-                <a href="ID/about.html" class="text-white text-xs font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">ID</a>
+                <a href="about.html" class="text-white text-xs font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">ID</a>
             </div>
         </div>
         <!-- Hamburger Button -->
         <div class="md:hidden">
-            <button id="menu-toggle" class="text-white gold-text hover:text-gray-300 transition" aria-label="Open menu">
+            <button id="menu-toggle" class="text-white gold-text hover:text-gray-300 transition" aria-label="Buka menu">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </div>
     </nav>
     <!-- Mobile Menu (hidden by default) -->
     <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 z-50 flex flex-col items-center justify-center space-y-8 text-xl text-white transition-all duration-300 hidden">
-        <button id="menu-close" class="absolute top-6 right-8 text-white text-3xl" aria-label="Close menu">
+        <button id="menu-close" class="absolute top-6 right-8 text-white text-3xl" aria-label="Tutup menu">
             <i class="fas fa-times"></i>
         </button>
-        <a href="index.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
-        <a href="work.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Work</a>
-        <a href="about.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
-        <a href="services.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Services</a>
-        <a href="contact.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+        <a href="index.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Beranda</a>
+        <a href="work.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Karya</a>
+        <a href="about.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Tentang</a>
+        <a href="services.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Layanan</a>
+        <a href="contact.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Kontak</a>
         <!-- Language Switcher Mobile -->
         <div class="flex items-center space-x-2 mt-4">
-            <a href="about.html" class="text-white text-base font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">EN</a>
+            <a href="../about.html" class="text-white text-base font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">EN</a>
             <span class="text-gray-400">|</span>
-            <a href="ID/about.html" class="text-white text-base font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">ID</a>
+            <a href="about.html" class="text-white text-base font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">ID</a>
         </div>
     </div>
 
@@ -64,9 +64,9 @@
         <div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full gold-bg opacity-10 rotate-infinite" style="animation-direction: reverse;"></div>
         
         <div class="relative z-10 text-center px-4">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white animate__animated animate__fadeIn">About <span class="gold-text text-glow">Us</span></h1>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white animate__animated animate__fadeIn">Tentang <span class="gold-text text-glow">Kami</span></h1>
             <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto animate__animated animate__fadeIn animate__delay-1s">
-                A Jakarta-based production house crafting meaningful stories through innovative visual storytelling since 2024.
+                Rumah produksi berbasis di Jakarta yang menciptakan kisah bermakna melalui storytelling visual inovatif sejak 2024.
             </p>
         </div>
     </section>
@@ -76,18 +76,18 @@
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="animate__animated animate__fadeInLeft">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6 gold-text">Our Story</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 gold-text">Kisah Kami</h2>
                     <p class="text-gray-300 mb-6">
-                        Lab Pictures is a Jakarta-based production house established in October 2024. With a team of seasoned professionals, we specialize in high-profile audiovisual projects, including feature films, web series, music videos, digital ads, company profiles, and TV programs.
+                        Lab Pictures adalah rumah produksi yang berbasis di Jakarta dan didirikan pada Oktober 2024. Dengan tim profesional berpengalaman, kami mengerjakan berbagai proyek audiovisual bergengsi, termasuk film layar lebar, web series, video musik, iklan digital, profil perusahaan, dan program TV.
                     </p>
                 </div>
                 <div class="relative animate__animated animate__fadeInRight">
                     <div class="bg-gray-800 p-8 rounded-lg">
-                        <h3 class="text-2xl font-bold text-white mb-4">Behind the Name</h3>
+                        <h3 class="text-2xl font-bold text-white mb-4">Makna Nama</h3>
                         <div class="space-y-4">
-                            <p class="text-gray-300"><span class="gold-text font-bold">Lab</span> represents a place of experimentation and innovation.</p>
-                            <p class="text-gray-300"><span class="gold-text font-bold">Pictures</span> symbolizes visual storytelling.</p>
-                            <p class="text-gray-400 mt-4">Together, Lab Pictures is a creative studio that crafts audiovisual works filled with emotion and variety.</p>
+                            <p class="text-gray-300"><span class="gold-text font-bold">Lab</span> merepresentasikan tempat eksperimen dan inovasi.</p>
+                            <p class="text-gray-300"><span class="gold-text font-bold">Pictures</span> melambangkan kekuatan bercerita secara visual.</p>
+                            <p class="text-gray-400 mt-4">Bersama, Lab Pictures adalah studio kreatif yang menghasilkan karya audiovisual penuh emosi dan keberagaman.</p>
                         </div>
                     </div>
                 </div>
@@ -106,12 +106,12 @@
                     <div class="gold-text text-3xl mb-6">
                         <i class="fas fa-eye"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Vision</h3>
+                    <h3 class="text-2xl font-bold text-white mb-4">Visi</h3>
                     <ol class="text-gray-300 list-decimal list-inside space-y-2">
-                        <li>To become one of the leading film production companies in Indonesia.</li>
-                        <li>To produce imaginative, high-quality, innovative, and inspiring film content.</li>
-                        <li>To build a healthy and sustainable creative industry.</li>
-                        <li>To become a pioneer in the creative industry in Asia.</li>
+                        <li>Menjadi salah satu perusahaan produksi film terkemuka di Indonesia.</li>
+                        <li>Menghasilkan konten film yang imajinatif, berkualitas, inovatif, dan inspiratif.</li>
+                        <li>Membangun industri kreatif yang sehat dan berkelanjutan.</li>
+                        <li>Menjadi pelopor industri kreatif di Asia.</li>
                     </ol>
                 </div>
 
@@ -120,13 +120,13 @@
                     <div class="gold-text text-3xl mb-6">
                         <i class="fas fa-flag"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Mission</h3>
+                    <h3 class="text-2xl font-bold text-white mb-4">Misi</h3>
                     <ol class="text-gray-300 list-decimal list-inside space-y-2">
-                        <li>To develop unique and engaging stories for audiences.</li>
-                        <li>To create content that is factual, educational, entertaining, and raises social awareness.</li>
-                        <li>To build a professional and internationally-caliber creative team.</li>
-                        <li>To improve film production quality through technology and innovation.</li>
-                        <li>To increase awareness of the importance of the creative industry for culture and the economy.</li>
+                        <li>Mengembangkan cerita yang unik dan menarik bagi audiens.</li>
+                        <li>Menciptakan konten yang faktual, mendidik, menghibur, dan membangun kesadaran sosial.</li>
+                        <li>Membangun tim kreatif yang profesional dan berkaliber internasional.</li>
+                        <li>Meningkatkan kualitas produksi film melalui teknologi dan inovasi.</li>
+                        <li>Meningkatkan kesadaran akan pentingnya industri kreatif bagi budaya dan ekonomi.</li>
                     </ol>
                 </div>
             </div>
@@ -136,7 +136,7 @@
     <!-- Team Section -->
     <section class="py-20 px-8 bg-black">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center gold-text">Our Leadership</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center gold-text">Pimpinan Kami</h2>
             
             <div class="space-y-10">
                 <!-- Team Member 1 -->
@@ -144,7 +144,7 @@
                     
                     <!-- Image Section -->
                     <div class="w-full md:w-80 h-64 md:h-auto flex-shrink-0 overflow-hidden relative">
-                        <img src="assets/founder-labkreasi.png"
+                        <img src="../assets/founder-labkreasi.png"
                             alt="Elsaputra Djaja Justia"
                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-70"></div>
@@ -155,7 +155,7 @@
                         <h3 class="text-2xl md:text-3xl font-bold text-white mb-3">Elsaputra Justia</h3>
                         <p class="text-lg md:text-xl text-gray-400 mb-4">Founder & Executive Producer</p>
                         <p class="text-base md:text-lg text-gray-300 leading-relaxed">
-                            Entrepreneur with deep experience in digital entertainment, in TV media and finance.
+                            Wirausaha dengan pengalaman mendalam di bidang hiburan digital, media TV, dan keuangan.
                         </p>
                     </div>
                 </div>
@@ -163,21 +163,20 @@
         </div>
     </section>
 
-
     <!-- Contact CTA -->
     <section class="py-20 px-8 bg-gray-900 relative overflow-hidden">
         <div class="absolute inset-0 opacity-20">
-            <img src="https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1131&q=80" 
-                 alt="Background" class="w-full h-full object-cover">
+            <img src="https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1131&q=80" 
+                 alt="Latar Belakang" class="w-full h-full object-cover">
         </div>
         
         <div class="max-w-4xl mx-auto relative text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Let's Create Something Amazing</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Mari Ciptakan Sesuatu yang Luar Biasa</h2>
             <p class="text-xl text-gray-300 mb-8">
-                Join us in crafting meaningful stories that resonate with audiences.
+                Bergabunglah bersama kami untuk menciptakan kisah bermakna yang berkesan bagi audiens.
             </p>
             <a href="contact.html" class="inline-block px-8 py-4 gold-bg text-black font-medium rounded-full hover:bg-amber-600 transition duration-500 transform hover:scale-105 shine">
-                Get In Touch
+                Hubungi Kami
             </a>
         </div>
     </section>
@@ -191,32 +190,32 @@
                         <span class="gold-text">LAB PICTURES</span>
                     </div>
                     <p class="text-gray-400">
-                        Creating visual stories that inspire and engage audiences worldwide.
+                        Menciptakan kisah visual yang menginspirasi dan melibatkan audiens di seluruh dunia.
                     </p>
                 </div>
                 
                 <div class="animate__animated animate__fadeIn" style="animation-delay: 0.1s;">
-                    <h3 class="text-white font-bold mb-4">Navigation</h3>
+                    <h3 class="text-white font-bold mb-4">Navigasi</h3>
                     <ul class="space-y-2">
-                        <li><a href="index.html" class="text-gray-400 hover-gold transition duration-300">Home</a></li>
-                        <li><a href="work.html" class="text-gray-400 hover-gold transition duration-300">Work</a></li>
-                        <li><a href="about.html" class="text-gray-400 hover-gold transition duration-300">About</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Services</a></li>
-                        <li><a href="contact.html" class="text-gray-400 hover-gold transition duration-300">Contact</a></li>
+                        <li><a href="index.html" class="text-gray-400 hover-gold transition duration-300">Beranda</a></li>
+                        <li><a href="work.html" class="text-gray-400 hover-gold transition duration-300">Karya</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover-gold transition duration-300">Tentang</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Layanan</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover-gold transition duration-300">Kontak</a></li>
                     </ul>
                 </div>
                 
                 <div class="animate__animated animate__fadeIn" style="animation-delay: 0.2s;">
-                    <h3 class="text-white font-bold mb-4">Services</h3>
+                    <h3 class="text-white font-bold mb-4">Layanan</h3>
                     <ul class="space-y-2">
-                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Film Production</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Commercials</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Series Production</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Produksi Film</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Iklan Komersial</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Produksi Series</a></li>
                     </ul>
                 </div>
                 
                 <div class="animate__animated animate__fadeIn" style="animation-delay: 0.3s;">
-                    <h3 class="text-white font-bold mb-4">Connect</h3>
+                    <h3 class="text-white font-bold mb-4">Kontak</h3>
                     <div class="flex space-x-4 mb-4">
                         <a href="https://www.instagram.com/labpicturesinema?igsh=aHhqcGhmb2Nwa2oz&utm_source=qr" class="text-gray-400 hover-gold transition duration-300 text-xl"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.tiktok.com/@labpictures?_t=ZS-8wYrpEoMQye&_r=1" class="text-gray-400 hover-gold transition duration-300 text-xl"><i class="fab fa-tiktok"></i></a>
@@ -232,16 +231,16 @@
             
             <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center animate__animated animate__fadeIn">
                 <p class="text-gray-400 text-sm mb-4 md:mb-0">
-                    © 2025 Lab Pictures. All rights reserved.
+                    © 2025 Lab Pictures. Seluruh hak cipta dilindungi.
                 </p>
                 <div class="flex space-x-6">
-                    <a href="#" class="text-gray-400 hover-gold transition duration-300 text-sm">Privacy Policy</a>
-                    <a href="#" class="text-gray-400 hover-gold transition duration-300 text-sm">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover-gold transition duration-300 text-sm">Kebijakan Privasi</a>
+                    <a href="#" class="text-gray-400 hover-gold transition duration-300 text-sm">Syarat & Ketentuan</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="../scripts.js"></script>
 </body>
 </html>

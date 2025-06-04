@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Work | Lab Pictures</title>
+    <title>Karya Kami | Lab Pictures</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <!-- Custom Cursor -->
@@ -16,44 +16,44 @@
     <!-- Navigation -->
     <nav id="main-navbar" class="fixed top-0 left-0 w-full z-50 py-6 px-4 md:px-8 flex justify-between items-center transition-all duration-300 bg-transparent">
         <div class="logo animate__animated animate__fadeInDown">
-            <img src="assets/logo-lab-pictures.png" alt="Lab Pictures Logo" class="h-12 w-auto">
+            <img src="../assets/logo-lab-pictures.png" alt="Logo Lab Pictures" class="h-12 w-auto">
         </div>
         <!-- Desktop Menu -->
         <div id="main-menu" class="hidden md:flex space-x-8 items-center">
-            <a href="index.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Home</a>
-            <a href="work.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Work</a>
-            <a href="about.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">About</a>
-            <a href="services.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Services</a>
-            <a href="contact.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Contact</a>
+            <a href="index.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Beranda</a>
+            <a href="work.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Karya</a>
+            <a href="about.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Tentang</a>
+            <a href="services.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Layanan</a>
+            <a href="contact.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Kontak</a>
             <!-- Language Switcher -->
             <div class="ml-4 flex items-center space-x-2">
-                <a href="work.html" class="text-white text-xs font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">EN</a>
+                <a href="../work.html" class="text-white text-xs font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">EN</a>
                 <span class="text-gray-400">|</span>
-                <a href="ID/work.html" class="text-white text-xs font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">ID</a>
+                <a href="work.html" class="text-white text-xs font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">ID</a>
             </div>
         </div>
         <!-- Hamburger Button -->
         <div class="md:hidden">
-            <button id="menu-toggle" class="text-white gold-text hover:text-gray-300 transition" aria-label="Open menu">
+            <button id="menu-toggle" class="text-white gold-text hover:text-gray-300 transition" aria-label="Buka menu">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </div>
     </nav>
     <!-- Mobile Menu (hidden by default) -->
     <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 z-50 flex flex-col items-center justify-center space-y-8 text-xl text-white transition-all duration-300 hidden">
-        <button id="menu-close" class="absolute top-6 right-8 text-white text-3xl" aria-label="Close menu">
+        <button id="menu-close" class="absolute top-6 right-8 text-white text-3xl" aria-label="Tutup menu">
             <i class="fas fa-times"></i>
         </button>
-        <a href="index.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
-        <a href="work.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Work</a>
-        <a href="about.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
-        <a href="services.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Services</a>
-        <a href="contact.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+        <a href="index.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Beranda</a>
+        <a href="work.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Karya</a>
+        <a href="about.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Tentang</a>
+        <a href="services.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Layanan</a>
+        <a href="contact.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Kontak</a>
         <!-- Language Switcher Mobile -->
         <div class="flex items-center space-x-2 mt-4">
-            <a href="work.html" class="text-white text-base font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">EN</a>
+            <a href="../work.html" class="text-white text-base font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">EN</a>
             <span class="text-gray-400">|</span>
-            <a href="ID/work.html" class="text-white text-base font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">ID</a>
+            <a href="work.html" class="text-white text-base font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">ID</a>
         </div>
     </div>
 
@@ -64,9 +64,9 @@
         <div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full gold-bg opacity-10 rotate-infinite" style="animation-direction: reverse;"></div>
         
         <div class="relative z-10 text-center px-4">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white animate__animated animate__fadeIn">Our <span class="gold-text text-glow">Work</span></h1>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white animate__animated animate__fadeIn">Karya <span class="gold-text text-glow">Kami</span></h1>
             <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto animate__animated animate__fadeIn animate__delay-1s">
-                Explore our portfolio of cinematic storytelling, commercial productions, and branded content that captivate audiences worldwide.
+                Jelajahi portofolio kami dalam storytelling sinematik, produksi komersial, dan konten merek yang memikat audiens di seluruh dunia.
             </p>
         </div>
     </section>
@@ -79,13 +79,13 @@
                 <a href="movie-documentation.html">
                 <div class="project-card group animate__animated animate__fadeInUp">
                     <div class="relative overflow-hidden rounded-lg h-[500px]">
-                        <img src="assets/lw-production.jpeg" 
-                             alt="Project 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="../assets/lw-production.jpeg" 
+                             alt="Proyek 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
                         <div class="absolute bottom-8 left-8">
-                            <h3 class="text-2xl font-bold text-white mb-2">Our Project Movie Documentation</h3>
-                            <p class="text-gray-300 mb-4">Directing, Cinematography</p>
-                            <p class="text-gray-400 max-w-md">A compelling narrative about human connection in the digital age, featuring stunning visuals and emotional depth.</p>
+                            <h3 class="text-2xl font-bold text-white mb-2">Dokumentasi Proyek Film Kami</h3>
+                            <p class="text-gray-300 mb-4">Penyutradaraan, Sinematografi</p>
+                            <p class="text-gray-400 max-w-md">Sebuah narasi menarik tentang hubungan manusia di era digital, dengan visual yang memukau dan kedalaman emosi.</p>
                         </div>
                         <div class="absolute top-8 right-8 gold-text text-2xl opacity-0 group-hover:opacity-100 transition duration-500">
                             <i class="fas fa-play"></i>
@@ -98,13 +98,13 @@
                 <a href="tv-echannel.html">
                 <div class="project-card group animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
                     <div class="relative overflow-hidden rounded-lg h-[500px]">
-                        <img src="assets/tv-echannel-gallery1.jpg" 
-                             alt="Project 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="../assets/tv-echannel-gallery1.jpg" 
+                             alt="Proyek 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
                         <div class="absolute bottom-8 left-8">
                             <h3 class="text-2xl font-bold text-white mb-2">TV EChannel</h3>
-                            <p class="text-gray-300 mb-4">Production, Post-Production</p>
-                            <p class="text-gray-400 max-w-md">A dynamic television production that brought stories to life through seamless coordination, creative direction, and broadcast-ready execution.</p>
+                            <p class="text-gray-300 mb-4">Produksi, Pascaproduksi</p>
+                            <p class="text-gray-400 max-w-md">Produksi televisi dinamis yang menghadirkan cerita-cerita melalui koordinasi, arahan kreatif, dan eksekusi siap tayang.</p>
                         </div>
                         <div class="absolute top-8 right-8 gold-text text-2xl opacity-0 group-hover:opacity-100 transition duration-500">
                             <i class="fas fa-play"></i>
@@ -119,7 +119,7 @@
     <!-- Categories Section -->
     <section class="py-20 px-8 bg-gray-900">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center gold-text">Categories</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center gold-text">Kategori</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Category 1 -->
@@ -127,12 +127,12 @@
                     <div class="gold-text text-3xl mb-4">
                         <i class="fas fa-film"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-4">Films</h3>
+                    <h3 class="text-xl font-bold text-white mb-4">Film</h3>
                     <ul class="space-y-2 text-gray-400">
-                        <li>Short Films</li>
-                        <li>Feature Films</li>
-                        <li>Documentaries</li>
-                        <li>Experimental</li>
+                        <li>Film Pendek</li>
+                        <li>Film Layar Lebar</li>
+                        <li>Dokumenter</li>
+                        <li>Eksperimental</li>
                     </ul>
                 </div>
 
@@ -141,12 +141,12 @@
                     <div class="gold-text text-3xl mb-4">
                         <i class="fas fa-ad"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-4">Commercial</h3>
+                    <h3 class="text-xl font-bold text-white mb-4">Komersial</h3>
                     <ul class="space-y-2 text-gray-400">
-                        <li>Brand Campaigns</li>
-                        <li>TV Commercials</li>
-                        <li>Digital Ads</li>
-                        <li>Product Launches</li>
+                        <li>Kampanye Merek</li>
+                        <li>Iklan TV</li>
+                        <li>Iklan Digital</li>
+                        <li>Peluncuran Produk</li>
                     </ul>
                 </div>
 
@@ -155,12 +155,12 @@
                     <div class="gold-text text-3xl mb-4">
                         <i class="fas fa-photo-video"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-4">Content</h3>
+                    <h3 class="text-xl font-bold text-white mb-4">Konten</h3>
                     <ul class="space-y-2 text-gray-400">
-                        <li>Music Videos</li>
-                        <li>Corporate Videos</li>
-                        <li>Social Media</li>
-                        <li>Event Coverage</li>
+                        <li>Video Musik</li>
+                        <li>Video Korporat</li>
+                        <li>Sosial Media</li>
+                        <li>Liputan Acara</li>
                     </ul>
                 </div>
             </div>
@@ -170,17 +170,17 @@
     <!-- Contact CTA -->
     <section class="py-20 px-8 bg-black relative overflow-hidden">
         <div class="absolute inset-0 opacity-20">
-            <img src="https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1131&q=80" 
-                 alt="Background" class="w-full h-full object-cover">
+            <img src="https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1131&q=80" 
+                 alt="Latar Belakang" class="w-full h-full object-cover">
         </div>
         
         <div class="max-w-4xl mx-auto relative text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Have a Project in Mind?</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Punya Proyek?</h2>
             <p class="text-xl text-gray-300 mb-8">
-                Let's collaborate and bring your vision to life.
+                Mari kolaborasi dan wujudkan visi Anda bersama kami.
             </p>
             <a href="contact.html" class="inline-block px-8 py-4 gold-bg text-black font-medium rounded-full hover:bg-amber-600 transition duration-500 transform hover:scale-105 shine">
-                Get In Touch
+                Hubungi Kami
             </a>
         </div>
     </section>
@@ -194,32 +194,32 @@
                         <span class="gold-text">LAB PICTURES</span>
                     </div>
                     <p class="text-gray-400">
-                        Creating visual stories that inspire and engage audiences worldwide.
+                        Menciptakan kisah visual yang menginspirasi dan melibatkan audiens di seluruh dunia.
                     </p>
                 </div>
                 
                 <div class="animate__animated animate__fadeIn" style="animation-delay: 0.1s;">
-                    <h3 class="text-white font-bold mb-4">Navigation</h3>
+                    <h3 class="text-white font-bold mb-4">Navigasi</h3>
                     <ul class="space-y-2">
-                        <li><a href="index.html" class="text-gray-400 hover-gold transition duration-300">Home</a></li>
-                        <li><a href="work.html" class="text-gray-400 hover-gold transition duration-300">Work</a></li>
-                        <li><a href="about.html" class="text-gray-400 hover-gold transition duration-300">About</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Services</a></li>
-                        <li><a href="contact.html" class="text-gray-400 hover-gold transition duration-300">Contact</a></li>
+                        <li><a href="index.html" class="text-gray-400 hover-gold transition duration-300">Beranda</a></li>
+                        <li><a href="work.html" class="text-gray-400 hover-gold transition duration-300">Karya</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover-gold transition duration-300">Tentang</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Layanan</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover-gold transition duration-300">Kontak</a></li>
                     </ul>
                 </div>
                 
                 <div class="animate__animated animate__fadeIn" style="animation-delay: 0.2s;">
-                    <h3 class="text-white font-bold mb-4">Services</h3>
+                    <h3 class="text-white font-bold mb-4">Layanan</h3>
                     <ul class="space-y-2">
-                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Film Production</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Commercials</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Series Production</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Produksi Film</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Iklan Komersial</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Produksi Series</a></li>
                     </ul>
                 </div>
                 
                 <div class="animate__animated animate__fadeIn" style="animation-delay: 0.3s;">
-                    <h3 class="text-white font-bold mb-4">Connect</h3>
+                    <h3 class="text-white font-bold mb-4">Kontak</h3>
                     <div class="flex space-x-4 mb-4">
                         <a href="https://www.instagram.com/labpicturesinema?igsh=aHhqcGhmb2Nwa2oz&utm_source=qr" class="text-gray-400 hover-gold transition duration-300 text-xl"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.tiktok.com/@labpictures?_t=ZS-8wYrpEoMQye&_r=1" class="text-gray-400 hover-gold transition duration-300 text-xl"><i class="fab fa-tiktok"></i></a>
@@ -235,16 +235,16 @@
             
             <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center animate__animated animate__fadeIn">
                 <p class="text-gray-400 text-sm mb-4 md:mb-0">
-                    © 2025 Lab Pictures. All rights reserved.
+                    © 2025 Lab Pictures. Seluruh hak cipta dilindungi.
                 </p>
                 <div class="flex space-x-6">
-                    <a href="#" class="text-gray-400 hover-gold transition duration-300 text-sm">Privacy Policy</a>
-                    <a href="#" class="text-gray-400 hover-gold transition duration-300 text-sm">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover-gold transition duration-300 text-sm">Kebijakan Privasi</a>
+                    <a href="#" class="text-gray-400 hover-gold transition duration-300 text-sm">Syarat & Ketentuan</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="../scripts.js"></script>
 </body>
 </html>

@@ -25,12 +25,18 @@
             <img src="assets/logo-lab-pictures.png" alt="Lab Pictures Logo" class="h-12 w-auto">
         </div>
         <!-- Desktop Menu -->
-        <div id="main-menu" class="hidden md:flex space-x-8">
+        <div id="main-menu" class="hidden md:flex space-x-8 items-center">
             <a href="index.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Home</a>
             <a href="work.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Work</a>
             <a href="about.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">About</a>
             <a href="services.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Services</a>
             <a href="contact.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Contact</a>
+            <!-- Language Switcher -->
+            <div class="ml-4 flex items-center space-x-2">
+                <a href="movie-documentation.html" class="text-white text-xs font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">EN</a>
+                <span class="text-gray-400">|</span>
+                <a href="ID/movie-documentation.html" class="text-white text-xs font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">ID</a>
+            </div>
         </div>
         <!-- Hamburger Button -->
         <div class="md:hidden">
@@ -49,6 +55,12 @@
         <a href="about.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
         <a href="services.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Services</a>
         <a href="contact.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+        <!-- Language Switcher Mobile -->
+        <div class="flex items-center space-x-2 mt-4">
+            <a href="movie-documentation.html" class="text-white text-base font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">EN</a>
+            <span class="text-gray-400">|</span>
+            <a href="ID/movie-documentation.html" class="text-white text-base font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">ID</a>
+        </div>
     </div>
 
     <!-- Gallery Section -->

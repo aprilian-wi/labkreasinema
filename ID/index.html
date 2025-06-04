@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab Pictures | Production House</title>
+    <title>Lab Pictures | Rumah Produksi</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <!-- Custom Cursor -->
@@ -16,51 +16,51 @@
     <!-- Navigation -->
     <nav id="main-navbar" class="fixed top-0 left-0 w-full z-50 py-6 px-4 md:px-8 flex justify-between items-center transition-all duration-300 bg-transparent">
         <div class="logo animate__animated animate__fadeInDown">
-            <img src="assets/logo-lab-pictures.png" alt="Lab Pictures Logo" class="h-12 w-auto">
+            <img src="../assets/logo-lab-pictures.png" alt="Logo Lab Pictures" class="h-12 w-auto">
         </div>
         <!-- Desktop Menu -->
         <div id="main-menu" class="hidden md:flex space-x-8 items-center">
-            <a href="index.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Home</a>
-            <a href="work.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Work</a>
-            <a href="about.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">About</a>
-            <a href="services.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Services</a>
-            <a href="contact.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Contact</a>
+            <a href="index.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Beranda</a>
+            <a href="work.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Karya</a>
+            <a href="about.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Tentang</a>
+            <a href="services.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Layanan</a>
+            <a href="contact.html" class="menu-item text-white text-sm uppercase tracking-wider hover-gold transition duration-300">Kontak</a>
             <!-- Language Switcher -->
             <div class="ml-4 flex items-center space-x-2">
-                <a href="index.html" class="text-white text-xs font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">EN</a>
+                <a href="../index.html" class="text-white text-xs font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">EN</a>
                 <span class="text-gray-400">|</span>
-                <a href="ID/index.html" class="text-white text-xs font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">ID</a>
+                <a href="index.html" class="text-white text-xs font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">ID</a>
             </div>
         </div>
         <!-- Hamburger Button -->
         <div class="md:hidden">
-            <button id="menu-toggle" class="text-white gold-text hover:text-gray-300 transition" aria-label="Open menu">
+            <button id="menu-toggle" class="text-white gold-text hover:text-gray-300 transition" aria-label="Buka menu">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </div>
     </nav>
     <!-- Mobile Menu (hidden by default) -->
     <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 z-50 flex flex-col items-center justify-center space-y-8 text-xl text-white transition-all duration-300 hidden">
-        <button id="menu-close" class="absolute top-6 right-8 text-white text-3xl" aria-label="Close menu">
+        <button id="menu-close" class="absolute top-6 right-8 text-white text-3xl" aria-label="Tutup menu">
             <i class="fas fa-times"></i>
         </button>
-        <a href="index.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
-        <a href="work.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Work</a>
-        <a href="about.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
-        <a href="services.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Services</a>
-        <a href="contact.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+        <a href="index.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Beranda</a>
+        <a href="work.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Karya</a>
+        <a href="about.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Tentang</a>
+        <a href="services.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Layanan</a>
+        <a href="contact.html" class="hover-gold transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Kontak</a>
         <!-- Language Switcher Mobile -->
         <div class="flex items-center space-x-2 mt-4">
-            <a href="index.html" class="text-white text-base font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">EN</a>
+            <a href="../index.html" class="text-white text-base font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">EN</a>
             <span class="text-gray-400">|</span>
-            <a href="ID/index.html" class="text-white text-base font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">ID</a>
+            <a href="index.html" class="text-white text-base font-bold px-2 py-1 rounded hover-gold transition duration-300 border border-transparent hover:border-gold">ID</a>
         </div>
     </div>
     
     <!-- Hero Section -->
     <section 
         class="relative h-screen w-full flex items-center justify-center overflow-hidden"
-        style="background-image: url('assets/hero-background.png'); background-size: cover; background-position: center;"
+        style="background-image: url('../assets/hero-background.png'); background-size: cover; background-position: center;"
     >
         <div 
             class="absolute inset-0 bg-black bg-opacity-40"
@@ -68,27 +68,25 @@
         ></div>
         <div 
             class="absolute inset-0 z-0 parallax-bg"
-            style="background-image: url('assets/hero-background.png'); background-size: cover; background-position: center; will-change: transform;"
+            style="background-image: url('../assets/hero-background.png'); background-size: cover; background-position: center; will-change: transform;"
         ></div>
         <div class="absolute text-center px-4 z-10 w-full">
             <h1 class="glitch text-5xl md:text-7xl font-bold mb-6 gold-text text-glow animate__animated animate__fadeIn animate__delay-1s"
-    data-text="LET'S ENJOY
-OUR MOVIE EXPERIENCES">
-    <span class="glitch-text">LET'S ENJOY <br>OUR MOVIE EXPERIENCES</span>
-</h1>
+                data-text="NIKMATI
+PENGALAMAN FILM BERSAMA KAMI">
+                <span class="glitch-text">NIKMATI <br>PENGALAMAN FILM BERSAMA KAMI</span>
+            </h1>
             <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-8 animate__animated animate__fadeIn animate__delay-1s">
-                Lab Pictures is a production house specializing in cinematic storytelling, commercial production, and branded content.
+                Lab Pictures adalah rumah produksi yang berfokus pada storytelling sinematik, produksi komersial, dan konten merek.
             </p>
             <a href="work.html" class="inline-block px-8 py-3 gold-bg text-black font-medium rounded-full hover:bg-amber-600 transition duration-500 transform hover:scale-105 shine animate__animated animate__fadeInUp animate__delay-1s">
-                Explore Our Work
+                Lihat Karya Kami
             </a>
         </div>
-
         <!-- Grid Lines -->
         <div class="grid-line top-1/4"></div>
         <div class="grid-line top-1/2"></div>
         <div class="grid-line top-3/4"></div>
-
         <!-- Floating elements -->
         <div class="absolute top-1/4 left-1/4 w-4 h-4 rounded-full gold-bg opacity-70 floating"></div>
         <div class="absolute top-1/3 right-1/4 w-6 h-6 rounded-full gold-bg opacity-50 floating" style="animation-delay: 1s;"></div>
@@ -98,19 +96,18 @@ OUR MOVIE EXPERIENCES">
     <!-- Featured Projects -->
     <section class="py-20 px-8 bg-pattern">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center gold-text text-outline animate__animated animate__fadeIn">Featured Projects</h2>
-            
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center gold-text text-outline animate__animated animate__fadeIn">Proyek Unggulan</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Project 1 -->
                 <a href="movie-documentation.html">
                 <div class="project-card group animate__animated animate__fadeInUp">
                     <div class="relative overflow-hidden rounded-lg mb-4 h-80">
-                        <img src="assets/lw-production.jpeg"
-                             alt="Project 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="../assets/lw-production.jpeg"
+                             alt="Proyek 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
                         <div class="absolute bottom-4 left-4">
-                            <h3 class="text-xl font-bold text-white">Our Project Movie Documentation</h3>
-                            <p class="text-gray-300">Directing, Cinematography</p>
+                            <h3 class="text-xl font-bold text-white">Dokumentasi Proyek Film Kami</h3>
+                            <p class="text-gray-300">Penyutradaraan, Sinematografi</p>
                         </div>
                         <div class="absolute top-4 right-4 gold-text text-2xl opacity-0 group-hover:opacity-100 transition duration-500">
                             <i class="fas fa-play"></i>
@@ -118,17 +115,16 @@ OUR MOVIE EXPERIENCES">
                     </div>
                 </div>
                 </a>
-
                 <!-- Project 2 -->
                 <a href="tv-echannel.html">
                 <div class="project-card group animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
                     <div class="relative overflow-hidden rounded-lg mb-4 h-80">
-                        <img src="assets/tv-echannel-gallery1.jpg" 
-                             alt="Project 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="../assets/tv-echannel-gallery1.jpg" 
+                             alt="Proyek 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
                         <div class="absolute bottom-4 left-4">
                             <h3 class="text-xl font-bold text-white">TV EChannel</h3>
-                            <p class="text-gray-300">Production, Post-Production</p>
+                            <p class="text-gray-300">Produksi, Pascaproduksi</p>
                         </div>
                         <div class="absolute top-4 right-4 gold-text text-2xl opacity-0 group-hover:opacity-100 transition duration-500">
                             <i class="fas fa-play"></i>
@@ -137,10 +133,9 @@ OUR MOVIE EXPERIENCES">
                 </div>
                 </a>
             </div>
-            
             <div class="text-center mt-12 animate__animated animate__fadeIn" style="animation-delay: 0.6s;">
                 <a href="work.html" class="inline-flex items-center text-white group hover-gold transition duration-300">
-                    <span class="mr-2">View All Projects</span>
+                    <span class="mr-2">Lihat Semua Proyek</span>
                     <i class="fas fa-arrow-right group-hover:translate-x-2 transition duration-300"></i>
                 </a>
             </div>
@@ -151,48 +146,42 @@ OUR MOVIE EXPERIENCES">
     <section class="py-20 px-8 bg-gray-900 relative overflow-hidden">
         <div class="absolute -right-20 -top-20 w-64 h-64 rounded-full gold-bg opacity-10 rotate-infinite"></div>
         <div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full gold-bg opacity-10 rotate-infinite" style="animation-direction: reverse;"></div>
-        
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
             <div class="animate__animated animate__fadeInLeft">
-<h2 class="text-3xl md:text-5xl font-bold mb-6 gold-text">About Lab Pictures</h2>
+                <h2 class="text-3xl md:text-5xl font-bold mb-6 gold-text">Tentang Lab Pictures</h2>
                 <p class="text-gray-300 mb-6">
-                    Founded in 2015, Lab Pictures is a collective of filmmakers, storytellers, and visual artists dedicated to creating compelling narratives across various mediums.
+                    Didirikan pada tahun 2015, Lab Pictures adalah kolektif pembuat film, pencerita, dan seniman visual yang berdedikasi menciptakan narasi menarik di berbagai media.
                 </p>
                 <p class="text-gray-300 mb-8">
-                    Our team brings together diverse expertise in cinematography, directing, editing, and production to deliver high-quality visual content that resonates with audiences.
+                    Tim kami menggabungkan keahlian beragam dalam sinematografi, penyutradaraan, editing, dan produksi untuk menghadirkan konten visual berkualitas tinggi yang berkesan bagi audiens.
                 </p>
                 <a href="about.html" class="inline-flex items-center text-white group hover-gold transition duration-300">
-                    <span class="mr-2">Learn More About Us</span>
+                    <span class="mr-2">Selengkapnya Tentang Kami</span>
                     <i class="fas fa-arrow-right group-hover:translate-x-2 transition duration-300"></i>
                 </a>
             </div>
-            
             <div class="grid grid-cols-2 gap-4 animate__animated animate__fadeInRight">
                 <div class="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition duration-500 transform hover:-translate-y-2">
                     <div class="gold-text text-3xl mb-4">
                         <i class="fas fa-film"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-2">Film Production</h3>
-                    <p class="text-gray-400">Feature films, short films, and documentaries</p>
+                    <h3 class="text-xl font-bold text-white mb-2">Produksi Film</h3>
+                    <p class="text-gray-400">Film layar lebar, film pendek, dan dokumenter</p>
                 </div>
-                
                 <div class="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition duration-500 transform hover:-translate-y-2" style="transition-delay: 0.1s;">
                     <div class="gold-text text-3xl mb-4">
                         <i class="fas fa-ad"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-2">Commercials</h3>
-                    <p class="text-gray-400">Branded content and advertisements</p>
+                    <h3 class="text-xl font-bold text-white mb-2">Iklan Komersial</h3>
+                    <p class="text-gray-400">Konten merek dan periklanan</p>
                 </div>
-                
                 <div class="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition duration-500 transform hover:-translate-y-2" style="transition-delay: 0.2s;">
                     <div class="gold-text text-3xl mb-4">
                         <i class="fas fa-video"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-2">Series Production</h3>
-                    <p class="text-gray-400">Editing, color grading, and VFX</p>
+                    <h3 class="text-xl font-bold text-white mb-2">Produksi Series</h3>
+                    <p class="text-gray-400">Editing, color grading, dan VFX</p>
                 </div>
-                
-                
             </div>
         </div>
     </section>
@@ -200,11 +189,9 @@ OUR MOVIE EXPERIENCES">
     <!-- Clients Section -->
     <section class="py-20 bg-black relative overflow-hidden">
         <div class="w-full">
-            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center gold-text text-outline animate__animated animate__fadeIn">Our Clients</h2>
-            
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center gold-text text-outline animate__animated animate__fadeIn">Klien Kami</h2>
             <div class="clients-carousel animate__animated animate__fadeIn" style="animation-delay: 0.2s;">
                 <div class="carousel-track flex space-x-12 overflow-hidden">
-                    <!-- Original slides -->
                     <div class="carousel-slide flex-shrink-0 text-center text-gray-400 text-2xl md:text-3xl font-medium hover-gold transition duration-300">Netflix</div>
                     <div class="carousel-slide flex-shrink-0 text-center text-gray-400 text-2xl md:text-3xl font-medium hover-gold transition duration-300">Amazon</div>
                     <div class="carousel-slide flex-shrink-0 text-center text-gray-400 text-2xl md:text-3xl font-medium hover-gold transition duration-300">Nike</div>
@@ -231,15 +218,13 @@ OUR MOVIE EXPERIENCES">
     <section class="py-20 px-8 bg-gray-900 relative overflow-hidden">
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
         <div class="absolute -right-40 -top-40 w-80 h-80 rounded-full gold-bg opacity-10 rotate-infinite"></div>
-        
         <div class="max-w-4xl mx-auto relative z-10">
-            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center gold-text animate__animated animate__fadeIn">What People Say</h2>
-            
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center gold-text animate__animated animate__fadeIn">Apa Kata Mereka</h2>
             <div class="relative animate__animated animate__fadeIn" style="animation-delay: 0.2s;">
                 <div class="testimonial-slide">
                     <div class="text-center">
                         <p class="text-xl md:text-2xl text-gray-300 italic mb-8">
-                            "Working with Lab Pictures was an exceptional experience. Their attention to detail and creative vision brought our project to life in ways we couldn't have imagined."
+                            "Bekerja sama dengan Lab Pictures adalah pengalaman luar biasa. Perhatian mereka pada detail dan visi kreatif benar-benar menghidupkan proyek kami di luar ekspektasi."
                         </p>
                         <div class="text-white">
                             <h4 class="font-bold">Sarah Johnson</h4>
@@ -247,7 +232,6 @@ OUR MOVIE EXPERIENCES">
                         </div>
                     </div>
                 </div>
-                
                 <div class="flex justify-center mt-8 space-x-2">
                     <button class="w-3 h-3 rounded-full bg-gray-600 hover:gold-bg transition duration-300"></button>
                     <button class="w-3 h-3 rounded-full bg-gray-400 hover:gold-bg transition duration-300"></button>
@@ -260,20 +244,18 @@ OUR MOVIE EXPERIENCES">
     <!-- CTA Section -->
     <section class="py-32 px-8 bg-black relative overflow-hidden">
         <div class="absolute inset-0 opacity-20">
-            <img src="https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1131&q=80" 
-                 alt="Background" class="w-full h-full object-cover">
+            <img src="https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1131&q=80" 
+                 alt="Latar Belakang" class="w-full h-full object-cover">
         </div>
-        
         <div class="max-w-4xl mx-auto relative text-center">
-            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white animate__animated animate__fadeIn">Ready to Create Something Amazing?</h2>
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white animate__animated animate__fadeIn">Siap Ciptakan Sesuatu yang Luar Biasa?</h2>
             <p class="text-xl text-gray-300 mb-8 animate__animated animate__fadeIn" style="animation-delay: 0.2s;">
-                Let's collaborate on your next project. Our team is ready to bring your vision to life.
+                Mari kolaborasi untuk proyek Anda berikutnya. Tim kami siap mewujudkan visi Anda.
             </p>
             <a href="contact.html" class="inline-block px-8 py-4 gold-bg text-black font-medium rounded-full hover:bg-amber-600 transition duration-500 transform hover:scale-105 pulse animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
-                Get In Touch
+                Hubungi Kami
             </a>
         </div>
-        
         <!-- Floating elements -->
         <div class="absolute top-1/4 left-1/4 w-4 h-4 rounded-full gold-bg opacity-70 floating"></div>
         <div class="absolute top-1/3 right-1/4 w-6 h-6 rounded-full gold-bg opacity-50 floating" style="animation-delay: 1s;"></div>
@@ -289,32 +271,29 @@ OUR MOVIE EXPERIENCES">
                         <span class="gold-text">LAB PICTURES</span>
                     </div>
                     <p class="text-gray-400">
-                        Creating visual stories that inspire and engage audiences worldwide.
+                        Menciptakan kisah visual yang menginspirasi dan melibatkan audiens di seluruh dunia.
                     </p>
                 </div>
-                
                 <div class="animate__animated animate__fadeIn" style="animation-delay: 0.1s;">
-                    <h3 class="text-white font-bold mb-4">Navigation</h3>
+                    <h3 class="text-white font-bold mb-4">Navigasi</h3>
                     <ul class="space-y-2">
-                        <li><a href="index.html" class="text-gray-400 hover-gold transition duration-300">Home</a></li>
-                        <li><a href="work.html" class="text-gray-400 hover-gold transition duration-300">Work</a></li>
-                        <li><a href="about.html" class="text-gray-400 hover-gold transition duration-300">About</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Services</a></li>
-                        <li><a href="contact.html" class="text-gray-400 hover-gold transition duration-300">Contact</a></li>
+                        <li><a href="index.html" class="text-gray-400 hover-gold transition duration-300">Beranda</a></li>
+                        <li><a href="work.html" class="text-gray-400 hover-gold transition duration-300">Karya</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover-gold transition duration-300">Tentang</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Layanan</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover-gold transition duration-300">Kontak</a></li>
                     </ul>
                 </div>
-                
                 <div class="animate__animated animate__fadeIn" style="animation-delay: 0.2s;">
-                    <h3 class="text-white font-bold mb-4">Services</h3>
+                    <h3 class="text-white font-bold mb-4">Layanan</h3>
                     <ul class="space-y-2">
-                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Film Production</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Commercials</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Series Production</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Produksi Film</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Iklan Komersial</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover-gold transition duration-300">Produksi Series</a></li>
                     </ul>
                 </div>
-                
                 <div class="animate__animated animate__fadeIn" style="animation-delay: 0.3s;">
-                    <h3 class="text-white font-bold mb-4">Connect</h3>
+                    <h3 class="text-white font-bold mb-4">Kontak</h3>
                     <div class="flex space-x-4 mb-4">
                         <a href="https://www.instagram.com/labpicturesinema?igsh=aHhqcGhmb2Nwa2oz&utm_source=qr" class="text-gray-400 hover-gold transition duration-300 text-xl"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.tiktok.com/@labpictures?_t=ZS-8wYrpEoMQye&_r=1" class="text-gray-400 hover-gold transition duration-300 text-xl"><i class="fab fa-tiktok"></i></a>
@@ -327,43 +306,40 @@ OUR MOVIE EXPERIENCES">
                     </p>
                 </div>
             </div>
-            
             <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center animate__animated animate__fadeIn">
                 <p class="text-gray-400 text-sm mb-4 md:mb-0">
-                    © 2025 Lab Pictures. All rights reserved.
+                    © 2025 Lab Pictures. Seluruh hak cipta dilindungi.
                 </p>
                 <div class="flex space-x-6">
-                    <a href="#" class="text-gray-400 hover-gold transition duration-300 text-sm">Privacy Policy</a>
-                    <a href="#" class="text-gray-400 hover-gold transition duration-300 text-sm">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover-gold transition duration-300 text-sm">Kebijakan Privasi</a>
+                    <a href="#" class="text-gray-400 hover-gold transition duration-300 text-sm">Syarat & Ketentuan</a>
                 </div>
             </div>
         </div>
     </footer>
-    
-    <script src="scripts.js"></script>
-    <!-- Tambahkan script parallax di bawah sebelum </body> -->
-<script>
-// Parallax effect untuk .parallax-bg
-document.addEventListener('scroll', function() {
-    const parallax = document.querySelector('.parallax-bg');
-    if (parallax) {
-        let scrolled = window.pageYOffset;
-        parallax.style.transform = 'translateY(' + (scrolled * 0.3) + 'px)';
-    }
-});
+    <script src="../scripts.js"></script>
+    <script>
+    // Parallax effect untuk .parallax-bg
+    document.addEventListener('scroll', function() {
+        const parallax = document.querySelector('.parallax-bg');
+        if (parallax) {
+            let scrolled = window.pageYOffset;
+            parallax.style.transform = 'translateY(' + (scrolled * 0.3) + 'px)';
+        }
+    });
 
-// Navbar transparent on top, solid on scroll (berlaku di semua halaman)
-window.addEventListener('scroll', function() {
-    const navbar = document.getElementById('main-navbar');
-    if (!navbar) return;
-    if (window.scrollY > 10) {
-        navbar.classList.remove('bg-transparent');
-        navbar.classList.add('bg-black', 'bg-opacity-80', 'backdrop-blur-md');
-    } else {
-        navbar.classList.add('bg-transparent');
-        navbar.classList.remove('bg-black', 'bg-opacity-80', 'backdrop-blur-md');
-    }
-});
-</script>
+    // Navbar transparent on top, solid on scroll (berlaku di semua halaman)
+    window.addEventListener('scroll', function() {
+        const navbar = document.getElementById('main-navbar');
+        if (!navbar) return;
+        if (window.scrollY > 10) {
+            navbar.classList.remove('bg-transparent');
+            navbar.classList.add('bg-black', 'bg-opacity-80', 'backdrop-blur-md');
+        } else {
+            navbar.classList.add('bg-transparent');
+            navbar.classList.remove('bg-black', 'bg-opacity-80', 'backdrop-blur-md');
+        }
+    });
+    </script>
 </body>
 </html>
